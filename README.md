@@ -45,8 +45,8 @@ fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
 
 fadeIn과 사용방법은 동일합니다.
 ```javascript
-	window.addEventListener('load',function(){
-		fadeOut(document.getElementById('element1'))
-	})
+window.addEventListener('load',function(){
+	fadeOut(document.getElementById('element1'))
+})
 ```
 윈도우의 모든 요소가 로드되자마자 이벤트핸들러는 fadeOut을 호출하는 예시입니다.
