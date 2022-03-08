@@ -1,6 +1,6 @@
 # Vanilla fadeIn
 
-`Jquery`없이 페이드인 기능을 사용하는 분들을 위한 스크립트 입니다.
+`Jquery`없이, 심지어 `CSS`도 없이 js파일 하나만으로 페이드인 기능을 사용하는 분들을 위한 스크립트 입니다.
 별도의 CSS나 라이브러리가 전혀 필요 없습니다.
 
 [Demo](https://www.gloomy-store.com/demo/vanillaFadeIn/)
@@ -18,11 +18,11 @@ javascript
 1. `단독사용`
 2. `화면에 나타나면 작동`
 
-1. 
+1. `단독사용` 
 원하는 때에 `fadeIn(element)`를 기재하여 fadeIn 함수를 호출합니다.
 ex) `fadeIn(document.getElementById('element1'))`
 
-2.
+2. `화면에 나타나면 작동`
 fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
 
 ```html
@@ -32,31 +32,21 @@ fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
 화면에서 스크롤이 벗어날 경우 요소가 fadeOut되며,
 화면 안으로 들어올 경우 요소가 fadeIn됩니다.
 
-## Property
+## How to use
 
-모든 속성은 `data-sa-*`로 사용합니다.
+### 아주 쉽습니다!
 
-```html
-<div
-    data-sa-offset="200px"
-    data-sa-delay="50"
-    data-sa-duration="1000"
-    data-sa-once="false"
->
-</div>
-```
+원하는 때에 `fadeIn(element)` 함수를 호출 시키면 바로 작동됩니다.
+`element`에는 각종 선택자`(getElementById(element), getElementByClassName(element)[i])` 등이 들어갈 수 있습니다.
+
 
 
 ### fadeOut
 
 fadeIn과 사용방법은 동일합니다.
-```html
-<sctipt>
+```javascript
 	window.addEventListener('load',function(){
 		fadeOut(document.getElementById('element1'))
 	})
-</sctipt>
 ```
-해당 앨리먼트의 애니메이션이 스크롤에 따라 `반복`됩니다.
-
-`기본값은 true`이며, `boolean`입니다.
+윈도우의 모든 요소가 로드되자마자 이벤트핸들러는 fadeOut을 호출하는 예시입니다.
