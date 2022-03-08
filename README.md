@@ -23,18 +23,18 @@ javascript
 
 ### 아주 쉽습니다!
 
-1. `단독사용` 
-원하는 때에 `fadeIn(element)`를 기재하여 fadeIn 함수를 호출합니다.
-ex) `fadeIn(document.getElementById('element1'))`
+1. `단독사용`  
+원하는 때에 `fadeIn(element)`를 기재하여 fadeIn 함수를 호출합니다.  
+ex) `fadeIn(document.getElementById('element1'))`  
 `element`에는 각종 선택자`(getElementById(element), getElementByClassName(element)[i])` 등이 들어갈 수 있습니다.
 
-2. `화면에 나타나면 작동`
-fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
+2. `화면에 나타나면 작동`  
+fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.  
 ```html
 <div class="js-fade-in" style="opacity:0;"></div>
 ```
-해당 클래스를 붙일 경우, 화면 높이를 계산해서 
-화면에서 스크롤이 벗어날 경우 요소가 fadeOut되며,
+해당 클래스를 붙일 경우, 화면 높이를 계산해서   
+화면에서 스크롤이 벗어날 경우 요소가 fadeOut되며,  
 화면 안으로 들어올 경우 요소가 fadeIn됩니다.
 
 
@@ -47,9 +47,9 @@ function fadeIn(t) {
 	...
 }
 ```
-`Timer`는 실제 javascript 시간과 같습니다(ms단위)
-위 예시는 1초동안 천천히 FadeIn이 일어나는 코드입니다.
-원한다면 `500`, `800` 등으로 바꿔서 빠른 애니메이션을 유도할 수 있습니다.
+`Timer`는 실제 javascript 시간과 같습니다(ms단위)  
+위 예시는 1초동안 천천히 FadeIn이 일어나는 코드입니다.  
+원한다면 `500`, `800` 등으로 바꿔서 빠른 애니메이션을 유도할 수 있습니다.  
 (단, 40의 배수 권장)
 
 
