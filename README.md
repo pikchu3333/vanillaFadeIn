@@ -39,6 +39,17 @@ fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
 원하는 때에 `fadeIn(element)` 함수를 호출 시키면 바로 작동됩니다.
 `element`에는 각종 선택자`(getElementById(element), getElementByClassName(element)[i])` 등이 들어갈 수 있습니다.
 
+```javascript
+function fadeIn(t) {
+	...
+	let Timer = 1000;
+	...
+}
+```
+`Timer`는 실제 javascript 시간과 같습니다(ms단위)
+위 예시는 1초동안 천천히 FadeIn이 일어나는 코드입니다.
+원한다면 `500`, `800` 등으로 바꿔서 빠른 애니메이션을 유도할 수 있습니다.
+(단, 40의 배수 권장)
 
 
 ### fadeOut

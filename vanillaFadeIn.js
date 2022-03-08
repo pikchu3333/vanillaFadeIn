@@ -14,7 +14,7 @@
 		function fadeIn(t) {
 			let op = Number(t.style.opacity);
 			if(op < 1 && op >0.1) return;
-			let Timer = 1000;
+			let Timer = 800;
 			setInterval(function() {
 				if (op < 1) {
 					op = Number((op + 0.025).toFixed(3));
