@@ -15,16 +15,21 @@ javascript
 ## Type
 
 두 가지 타입으로 사용이 가능합니다.
-1. `단독사용`
-2. `화면에 나타나면 작동`
+1. `단독사용(manual)`
+2. `화면에 나타나면 저절로 알아서 작동`
+
+
+## How to use
+
+### 아주 쉽습니다!
 
 1. `단독사용` 
 원하는 때에 `fadeIn(element)`를 기재하여 fadeIn 함수를 호출합니다.
 ex) `fadeIn(document.getElementById('element1'))`
+`element`에는 각종 선택자`(getElementById(element), getElementByClassName(element)[i])` 등이 들어갈 수 있습니다.
 
 2. `화면에 나타나면 작동`
 fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
-
 ```html
 <div class="js-fade-in" style="opacity:0;"></div>
 ```
@@ -32,12 +37,8 @@ fadeIn을 원하는 요소에 `js-fade-in`클래스를 붙여놓습니다.
 화면에서 스크롤이 벗어날 경우 요소가 fadeOut되며,
 화면 안으로 들어올 경우 요소가 fadeIn됩니다.
 
-## How to use
 
-### 아주 쉽습니다!
-
-원하는 때에 `fadeIn(element)` 함수를 호출 시키면 바로 작동됩니다.
-`element`에는 각종 선택자`(getElementById(element), getElementByClassName(element)[i])` 등이 들어갈 수 있습니다.
+### Customize
 
 ```javascript
 function fadeIn(t) {
@@ -57,7 +58,8 @@ function fadeIn(t) {
 fadeIn과 사용방법은 동일합니다.
 ```javascript
 window.addEventListener('load',function(){
-	fadeOut(document.getElementById('element1'))
+	let elm = document.getElementById('element1');
+	fadeOut(elm)
 })
 ```
 윈도우의 모든 요소가 로드되자마자 이벤트핸들러는 fadeOut을 호출하는 예시입니다.
