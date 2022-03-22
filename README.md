@@ -3,7 +3,7 @@
 `Jquery`없이, 심지어 `CSS`도 없이 js파일 하나만으로 페이드인 기능을 사용하는 분들을 위한 스크립트 입니다.
 별도의 CSS나 라이브러리가 전혀 필요 없습니다.
 
-[Demo](https://www.gloomy-store.com/demo/vanillaFadeIn/){target="_blank"}
+[Demo](https://www.gloomy-store.com/demo/vanillaFadeIn/){:target="_blank"}
 
 ### CDN
 
